@@ -1,0 +1,21 @@
+<div id="search-component">
+  <h4>
+    <label for="search-box">
+      Hero Search
+    </label>
+  </h4>
+  <input #searchBox
+  id="search-box"
+  (input)="search(searchBox.value)" />
+
+  <ul class="search-result">
+    <!-- The $ is a convention that indicates heroes$ is an Observable, not an array -->
+    <!-- 緊跟著一個 async。這表示 Angular 的 AsyncPipe 管道，它會自動訂閱 Observable，
+      這樣你就不用在元件類別中這麼做了。 -->
+    <li *ngFor="let hero of heroes$ | async" >
+      <a routerLink="/detail/{{hero.id}}">
+        {{hero.name}}
+      </a>
+    </li>
+  </ul>
+</div>

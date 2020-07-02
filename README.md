@@ -1,5 +1,16 @@
 # AngularTourOfHeroes
 
+<h2>This is a Angular offical Hero Example</h2>
+- it demo how to use message service
+- use type interface
+- it use a in-memory-db to mock real db, so we can use http to do CRUD
+- also have a serach input function
+
+## How to run it
+- assume you have npm installed
+- need to install ng cli in global
+- go root and use npm install
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
 
 ## Development server
